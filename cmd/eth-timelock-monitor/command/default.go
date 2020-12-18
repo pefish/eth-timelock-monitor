@@ -12,6 +12,7 @@ import (
 	"github.com/pefish/telegram-bot-manager/pkg/telegram-sender"
 	"github.com/pkg/errors"
 	"strings"
+	"time"
 )
 
 type DefaultCommand struct {
@@ -89,6 +90,20 @@ func (dc *DefaultCommand) Start(data commander.StartData) error {
 		return err
 	}
 	go_logger.Logger.Info("watching...")
+	go func() {
+		timer := time.NewTimer(0)
+		for range timer.C {
+			err := telegramRobot.TelegramSender().SendMsg(telegram_sender.MsgStruct{
+				ChatId: chatId,
+				Msg:    []byte("正在监控。。。"),
+			}, 0)
+			if err != nil {
+				go_logger.Logger.Error(err)
+				return
+			}
+			timer.Reset(time.Hour)
+		}
+	}()
 	for {
 		select {
 		case result := <- resultChan:
