@@ -84,7 +84,7 @@ func (dc *DefaultCommand) Start(data commander.StartData) error {
 	}
 	err = telegramRobot.TelegramSender().SendMsg(telegram_sender.MsgStruct{
 		ChatId: chatId,
-		Msg:    []byte(fmt.Sprintf("时间锁监控已启动... 监控地址为 %s", contractAddress)),
+		Msg:    []byte("时间锁监控已启动..."),
 	}, 0)
 	if err != nil {
 		return err
@@ -95,7 +95,7 @@ func (dc *DefaultCommand) Start(data commander.StartData) error {
 		for range timer.C {
 			err := telegramRobot.TelegramSender().SendMsg(telegram_sender.MsgStruct{
 				ChatId: chatId,
-				Msg:    []byte("正在监控。。。"),
+				Msg:    []byte(fmt.Sprintf("监控中，一切正常（合约地址：%s）", contractAddress)),
 			}, 0)
 			if err != nil {
 				go_logger.Logger.Error(err)
@@ -109,10 +109,13 @@ func (dc *DefaultCommand) Start(data commander.StartData) error {
 		case result := <- resultChan:
 			methodStr := result["signature"].(string)
 			if strings.Contains(methodStr, "setMigrator") {
-				methodStr = "⚠️：setMigrator被调用，请核实"
-			}
-			if strings.Contains(methodStr, "setDelay") {
-				methodStr = "⚠️：setDelay被调用，请核实"
+				methodStr = fmt.Sprintf(`
+⚠️紧急通知：%s被调用，迁移合约变动，资产风险非常高，为确保资产安全，请立刻联系陈旭（手机号：13575724011）提出pancake所有资产，并联系继勇（手机号：18317042249）查看情况
+`, methodStr)
+			} else {
+				methodStr = fmt.Sprintf(`
+通知：%s被调用，但无风险，无需任何动作，工作日提醒继勇确认即可
+`, methodStr)
 			}
 			err := telegramRobot.TelegramSender().SendMsg(telegram_sender.MsgStruct{
 				ChatId: chatId,
