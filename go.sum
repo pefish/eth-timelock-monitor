@@ -160,8 +160,8 @@ github.com/onsi/gomega v1.10.1/go.mod h1:iN09h71vgCQne3DLsj+A5owkum+a2tYe+TOCB1y
 github.com/opentracing/opentracing-go v1.1.0/go.mod h1:UkNAQd3GIcIGf0SeVgPpRdFStlNbqXla1AfSYxPUl2o=
 github.com/pborman/uuid v0.0.0-20170112150404-1b00554d8222 h1:goeTyGkArOZIVOMA0dQbyuPWGNQJZGPwPu/QS9GlpnA=
 github.com/pborman/uuid v0.0.0-20170112150404-1b00554d8222/go.mod h1:VyrYX9gd7irzKovcSS6BIIEwPRkP2Wm2m9ufcdFSJ34=
-github.com/pefish/go-coin-eth v0.0.1 h1:QVOppg1v0uiW1nilp3jpASRmIHdtCvIMLWL/Hflhj/k=
-github.com/pefish/go-coin-eth v0.0.1/go.mod h1:D6O10fQuE7MlDwUTjEN4W3z01A0KqpwqMgk8/tXOmvs=
+github.com/pefish/go-coin-eth v0.1.4 h1:/vLwbd4FDETm0PipItJEUBR+myE6L+dGGJHLx3SkAlc=
+github.com/pefish/go-coin-eth v0.1.4/go.mod h1:lbFvnBX1Og1uRtTGV/qvd0VyAjsZhIuZwBvf8GT21IU=
 github.com/pefish/go-commander v0.3.0/go.mod h1:wOx6M1VGHSoTQTIY5au7Bd/SAzrKc1mrzexOgUZ2ryE=
 github.com/pefish/go-commander v0.3.1 h1:PAOx/YDrpw5f4qxg6OqQdJVP+Ijek97wfkVUpKVW7yg=
 github.com/pefish/go-commander v0.3.1/go.mod h1:Dwx/ayHe8prMH7bmRz5xNWUGIS9vbESgBh+JyrrKb9s=
@@ -181,6 +181,8 @@ github.com/pefish/go-interface-logger v0.0.8/go.mod h1:OWmqpZPYoGn57lLAZLn8y6dFd
 github.com/pefish/go-logger v0.4.3/go.mod h1:N2S6ZFg70PyjD2piBtGCVCPH4qftR+aCCpN0ZW/arfc=
 github.com/pefish/go-logger v0.4.6 h1:6J2qJnnFMOscLCl9h2sSvxkHJ5ODolRDXO2zMcffdzY=
 github.com/pefish/go-logger v0.4.6/go.mod h1:N2S6ZFg70PyjD2piBtGCVCPH4qftR+aCCpN0ZW/arfc=
+github.com/pefish/go-logger v0.4.8 h1:TKomMzwIqcz+/RidWxuptOjuX3suC1sl7inCyq7/ArY=
+github.com/pefish/go-logger v0.4.8/go.mod h1:N2S6ZFg70PyjD2piBtGCVCPH4qftR+aCCpN0ZW/arfc=
 github.com/pefish/go-reflect v0.2.0/go.mod h1:KTxD5dhPvgUFiL+v2cxvYH/u4qEf7MPI+RouiiMNnRk=
 github.com/pefish/go-reflect v0.2.1 h1:RJs94iRBhGAUXKznI5042FhsSgF3ytHy/qeDLAV+xuM=
 github.com/pefish/go-reflect v0.2.1/go.mod h1:J1PmxXVMl+IqyzuL1OndaKqZjkvfKLaZA9LpUCUB99c=
