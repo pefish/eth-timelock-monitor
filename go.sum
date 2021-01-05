@@ -160,6 +160,8 @@ github.com/onsi/gomega v1.10.1/go.mod h1:iN09h71vgCQne3DLsj+A5owkum+a2tYe+TOCB1y
 github.com/opentracing/opentracing-go v1.1.0/go.mod h1:UkNAQd3GIcIGf0SeVgPpRdFStlNbqXla1AfSYxPUl2o=
 github.com/pborman/uuid v0.0.0-20170112150404-1b00554d8222 h1:goeTyGkArOZIVOMA0dQbyuPWGNQJZGPwPu/QS9GlpnA=
 github.com/pborman/uuid v0.0.0-20170112150404-1b00554d8222/go.mod h1:VyrYX9gd7irzKovcSS6BIIEwPRkP2Wm2m9ufcdFSJ34=
+github.com/pefish/go-build-tool v0.0.6 h1:JzT3UFjdVCCMJ4VAn4CockxZU3VlUVwjx5qySDSJaOk=
+github.com/pefish/go-build-tool v0.0.6/go.mod h1:8SeYMMg7ThT/m0m9pPF6vZij/01rWpBPSUAQYmy/aDk=
 github.com/pefish/go-coin-eth v0.1.4 h1:/vLwbd4FDETm0PipItJEUBR+myE6L+dGGJHLx3SkAlc=
 github.com/pefish/go-coin-eth v0.1.4/go.mod h1:lbFvnBX1Og1uRtTGV/qvd0VyAjsZhIuZwBvf8GT21IU=
 github.com/pefish/go-commander v0.3.0/go.mod h1:wOx6M1VGHSoTQTIY5au7Bd/SAzrKc1mrzexOgUZ2ryE=
@@ -188,8 +190,8 @@ github.com/pefish/go-reflect v0.2.1 h1:RJs94iRBhGAUXKznI5042FhsSgF3ytHy/qeDLAV+x
 github.com/pefish/go-reflect v0.2.1/go.mod h1:J1PmxXVMl+IqyzuL1OndaKqZjkvfKLaZA9LpUCUB99c=
 github.com/pefish/go-test-assert v0.0.1 h1:zWV2Hnn/Rtjf+bEOlyB8qF9ThJb7gmXpRPWEqJtjzjg=
 github.com/pefish/go-test-assert v0.0.1/go.mod h1:kfcsv5ag411u06gdV4iRKU8D0zOglian/DBacnCoQdc=
-github.com/pefish/telegram-bot-manager v0.1.2 h1:XZdMAB2m5s7YfRjrNKv2h1uOofSNrBE8RwLigbXVji0=
-github.com/pefish/telegram-bot-manager v0.1.2/go.mod h1:x2kmb8p7kGXoLOO19kQ+oGl1xwKB6Wt0sT240zadBr0=
+github.com/pefish/telegram-bot-manager v0.1.4 h1:8m8pMQ1zFnFreGg+0zWf0MMgWXUUztonVdRNc+7uL+E=
+github.com/pefish/telegram-bot-manager v0.1.4/go.mod h1:x2kmb8p7kGXoLOO19kQ+oGl1xwKB6Wt0sT240zadBr0=
 github.com/peterh/liner v1.1.1-0.20190123174540-a2c9a5303de7 h1:oYW+YCJ1pachXTQmzR3rNLYGGz4g/UgFcjb28p/viDM=
 github.com/peterh/liner v1.1.1-0.20190123174540-a2c9a5303de7/go.mod h1:CRroGNssyjTd/qIG2FyxByd2S8JEAZXBl4qUrZf8GS0=
 github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
