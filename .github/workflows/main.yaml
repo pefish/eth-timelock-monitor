@@ -29,3 +29,4 @@ jobs:
       - name: docker push
         run: |
           docker push ${{env.USERNAME}}/eth-timelock-monitor:${{env.RELEASE_VERSION}}
+
