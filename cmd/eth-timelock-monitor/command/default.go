@@ -67,7 +67,7 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	telegramRobot := telegram_robot.NewRobot("", telegramToken)
 	telegramRobot.SetLogger(go_logger.Logger)
 	wallet, err := go_coin_eth.NewWallet().InitRemote(go_coin_eth.UrlParam{
-		RpcUrl: "",
+		RpcUrl: "https://bsc-dataseed.binance.org/",
 		WsUrl:  wsServer,
 	})
 	if err != nil {
