@@ -33,11 +33,11 @@ func (dc *DefaultCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
 	return nil
 }
 
-func (dc *DefaultCommand) OnExited() error {
+func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
 	return nil
 }
 
-func (dc *DefaultCommand) Start(data commander.StartData) error {
+func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	wsServer, err := go_config.Config.GetString("ws-server")
 	if err != nil {
 		return err
@@ -66,7 +66,10 @@ func (dc *DefaultCommand) Start(data commander.StartData) error {
 	}
 	telegramRobot := telegram_robot.NewRobot("", telegramToken)
 	telegramRobot.SetLogger(go_logger.Logger)
-	wallet, err := go_coin_eth.NewWallet(wsServer)
+	wallet, err := go_coin_eth.NewWallet().InitRemote(go_coin_eth.UrlParam{
+		RpcUrl: "",
+		WsUrl:  wsServer,
+	})
 	if err != nil {
 		return err
 	}
